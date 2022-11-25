@@ -18,9 +18,15 @@
             <img :src="immagine" class="immagine-1">
         </div>
         <div :class="text">
-            <label for="paragrafo">Scrivi</label>
-            <input id="paragrafo" v-model="title"></input>
-            <p>{{title}}</p>
+
+            <label for="paragrafo">Scrivi nel Paragrafo</label>
+            <input type="text" id="paragrafo" v-model="title"></input>
+
+            
+        </div>
+        <!-- Contenitore Paragrafo -->
+        <div :class="paragraphContainer">
+            <p :class="testoJsAllineato">{{title}}</p>
         </div>
     </div>
 
