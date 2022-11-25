@@ -13,14 +13,14 @@
 <body>
     
     <div id="app">
-        <div>
-            <label for="paragrafo">Scrivi</label>
-            <input id="paragrafo" v-model="title"></input>
-            <p>{{title}}</p>
-        </div>
         <!-- IMG -->
         <div :class="circle">
             <img :src="immagine" class="immagine-1">
+        </div>
+        <div :class="text">
+            <label for="paragrafo">Scrivi</label>
+            <input id="paragrafo" v-model="title"></input>
+            <p>{{title}}</p>
         </div>
     </div>
 
