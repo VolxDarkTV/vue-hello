@@ -13,9 +13,15 @@
 <body>
     
     <div id="app">
-        <input v-model="title"></input>
+        <div>
+            <label for="paragrafo">Scrivi</label>
+            <input id="paragrafo" v-model="title"></input>
+            <p>{{title}}</p>
+        </div>
         <!-- IMG -->
-        <img :src="immagine" class="immagine-1">
+        <div :class="circle">
+            <img :src="immagine" class="immagine-1">
+        </div>
     </div>
 
     
